@@ -1,0 +1,85 @@
+html {
+    background-color: white;
+}
+
+body {
+    background-color: darkblue;
+}
+
+#Login_Box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    width: 400px;
+    text-align: center;
+}
+
+img {
+    margin-top: 5%;
+    height: 100px;
+    width: auto;
+}
+
+form {
+    margin: 10% 10% 0% 10%;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+}
+
+.stringInput {
+    margin-bottom: 5%;
+    padding: 4% 0% 4% 2%;
+    border: 1px solid rgb(153, 151, 151);
+    font-size: 100%;
+}
+
+.alert-warning {
+    margin-top: -4%;
+    margin-bottom: -4%;
+    text-align: left;
+    color: red;
+    font-size: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.submitButton {
+    margin: 4%;
+    padding: 4% 0% 4% 0%;
+    width: 30%;
+    border: 1px solid rgb(153, 151, 151);
+    border-radius: 5%;
+    background-color: darkblue;
+    color: white;
+    font-size: 100%;
+    text-align: center;
+}
+
+input:hover{
+    background-color: whitesmoke;
+ }
+
+input[type="submit"].submitButton:hover{
+   background-color: white;
+    color: darkblue;
+}
+
+#create_account {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:90%;
+    color: darkblue;
+    text-decoration: none;
+}
+
+#create_account:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:90%;
+    color: darkblue;
+    text-decoration: underline;
+}

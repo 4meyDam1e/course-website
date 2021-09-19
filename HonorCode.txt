@@ -1,0 +1,5 @@
+Amey Damle, Student No: 1007039198
+Hunter Chen, Student No: 1006950186
+Yilin Zhao, Student No: 1005701242
+
+Honor Code: We pledge that this program represents our own program code and that we have coded on our own. We received help from no one in designing and debugging our program. We have also read the plagiarism section in the course info sheet of CSC B20 and understand the consequences.

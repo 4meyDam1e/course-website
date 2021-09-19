@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='register.css')}}">
+    </head>
+    <body>
+        <div id="Login_Box">
+            <!--------------------------------------UOFT LOGO----------------------------------------->
+            <img src="../static/UofT_Logo.PNG" alt="UofT_Logo">
+
+            <!----------------------------------------FORM-------------------------------------------->
+            <form id="form_login" method="post">
+                <input class="stringInput" type=text name=name placeholder="Your Name">
+                <input class="stringInput" type=text name=username placeholder="Username">
+                <input class="stringInput" type=password name=password1 placeholder="Password">
+                <input class="stringInput" type=password name=password2 placeholder="Confirm Password">
+
+                <!------------------------------------FLASH MESSAGE----------------------------------->
+                <a href=""></a>
+                {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                        {% for message in messages %}
+                            <div class="alert-warning" role="alert">
+                                {{message}}
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+                <!-- <a href="/"><button>Back</button></a>
+                <div class="dropdown">
+                    <button class="dropbtn" type="submit">Account Type</button>
+                    <div class="dropdown-content">
+                      <input class="submitButton" type="submit" value="Student">
+                      <input class="submitButton" type="submit" value="Instructor">
+                    </div>
+                </div> -->
+                <!--------------------------DROP-DOWN MENU FOR ACCOUNT TYPE--------------------------->
+                <div id="dropdown">
+                    <label for="account_type">Select an account type:</label>
+                    <select name="account_type" id="account_type">
+                        <option value="Student">Student</option>
+                        <option value="Instructor">Instructor</option>
+                    </select>
+                </div>
+
+                <input class="submitButton" type="submit" value="Register">
+            <form>
+        </div>
+    </body>
+</html>

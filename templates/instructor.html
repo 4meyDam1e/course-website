@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css"  href="../static/index.css">
+    </head>
+
+    <div id="top"></div>
+
+<body>
+    <!-------------------------------------SCROLLING TO APPROPRIATE PAGES------------------------------------------>
+    <div class="navbar">
+        <a href="#top">Home</a>
+        <a href="#team">Team</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#lectures">Lectures</a>
+        <a href="#tutorials">Tutorials</a>
+        <a href="#assignments">Assignments</a>
+        <a href="#grades">Grades</a>
+        <a href="#regrade">Regrade</a>
+        <a href="#feedback">Feedback</a>
+        <a href="/logout">Logout</a>
+    </div>
+
+    <!-----------------------------------------------CODE FOR PAGES------------------------------------------------>
+    <!--PAGES HAVE ALTERNATING COLOUR-->
+    <!--------------------------------------------------TOP PAGE--------------------------------------------------->
+
+    <div class="page_blue">
+        <div id="top_box">
+            <div id="course_name">CSCB63: Design and Analysis of Data Structures</div>
+            <br>
+            <div id="course_desc">Design, analysis, implementation and comparison of efficient data structures for common abstract data types. 
+                Priority queues: heaps and mergeable heaps. Dictionaries: balanced binary search trees, B-trees, hashing. 
+                Amortization: data structures for managing dynamic tables and disjoint sets. Data structures for representing graphs. 
+                Graph searches.
+            </div>
+            <br>
+            <h3>Exclusions: </h3> CSC263H, CSC265H, (CSCC78H)
+            <br><br>
+            <h3>Course Website: </h3> <a href="https://mathlab.utsc.utoronto.ca/bretscher/b63">mathlab.utsc.utoronto.ca/bretscher/b63</a>
+            <br>
+            <a href="https://piazza.com/mail.utoronto.ca/winter2020/cscb63/home">Piazza</a>
+            <br>
+            <a href="https://markus.utsc.utoronto.ca/cscb63w21">MarkUs</a>
+            <br><br>
+            <h3>Prerequisites: </h3> CSCB36H or CSCB38H & [cGPA 2.75 or enrolment in a CSC subject POST]
+            <br><br>
+            <h3>Breadth Requirement: </h3> Quantitative Reasoning
+            <br><br>
+            <h3>Instructor:</h3>
+            Dr. Anna Bretscher
+            <br>
+            Email: <a href="mailto:anna.bretscher@utoronto.ca">anna.bretscher@utoronto.ca</a>
+            <br>
+            Office: IC493
+        </div>
+    </div>
+
+     <!--------------------------------------------------TEAM PAGE--------------------------------------------------->
+     <div class="page_white" id="team">
+        <div class="title">Team</div>
+        <!--Table_container CONTAINS THE ENTIRE TABLE-->
+        <!--Table_row CONTAINS APPROPRIATE ITEMS IN EACH ROW-->
+        <!--Cell IS AN ITEM IN EACH ROW-->
+        <div class="Table_container">
+            <div class="table_row">
+                <div class="Cell"> <h2>Instructor</h2> </div>
+                <div class="Cell"> <h2>Name</h2> </div>
+                <div class="Cell"> <h2>Email</h2> </div>
+            </div>
+            <div class="table_row">
+                <div class="Cell">Instructor</div>
+                <div class="Cell">Dr. Anna Bretscher</div>
+                <div class="Cell">FakeEmail@gmaill.com</div>
+            </div>
+            <div class="table_row">
+                <div class="Cell">Teaching Assistant</div>
+                <div class="Cell">Amey Damle</div>
+                <div class="Cell">FakeEmail@gmaill.com</div>
+            </div>
+            <div class="table_row">
+                <div class="Cell">Teaching Assistant</div>
+                <div class="Cell">Hunter Chen</div>
+                <div class="Cell">FakeEmail@gmaill.com</div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------------------------------SCHEDULE PAGE--------------------------------------------------->
+    <div class="page_blue" id="schedule">
+        <div class="title">Schedule</div>
+        <!--Container CONTAINS ALL THE BOXES-->
+        <!--column CONTAINS BOXES TO BE ARRANGED VERTICALLY-->
+        <!--Box CONTAINS TEXT CONTENT.-->
+        <div class="Container">       
+            <div class="column">
+                <div class="Box">
+                    <h2>Lectures</h2>
+                    Wednesdays 3-4pm <a href="https://utoronto.zoom.us/j/89553548645" target="_blank">Zoom Link</a>, Thursdays 9:10-11:00 <a href="https://utoronto.zoom.us/j/83378932991" target="_blank">Zoom Link</a>
+                </div>
+                <div class="Box">
+                    <h2>Office Hours</h2>
+                    Usually Mondays 11:00-12:30,<br>Friday 10:40-11:30.<br>Please see the calendar for weekly changes.
+                </div>
+            </div>
+            <div id="Calendar">
+                <iframe src="https://calendar.google.com/calendar/embed?src=f2oogqnfo1q728k3lcbtr4v478%40group.calendar.google.com&ctz=America%2FToronto" style="border: 0" width="800" height="400" frameborder="0" scrolling="yes"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------LECTURES PAGE------------------------------------------------->
+    <div class="page_white" id="lectures">
+        <div class="title">Lectures</div>
+        <!--Table_container CONTAINS THE ENTIRE TABLE-->
+        <!--Table_row CONTAINS APPROPRIATE ITEMS IN EACH ROW-->
+        <!--Cell IS AN ITEM IN EACH ROW-->
+        <div class="Table_container">
+            <div class="table_row">
+                <div class="Cell"> <h2>Week</h2> </div>
+                <div class="Cell"> <h2>Topic</h2> </div>
+                <div class="Cell"> <h2>Wed Pre-Lecture Reading/Exercise</h2> </div>
+                <div class="Cell"> <h2>Thursday Pre-Lecture Reading/Exercise</h2> </div>
+                <div class="Cell"> <h2>Wednesday Slides/Video</h2> </div>
+                <div class="Cell"> <h2>Thursday Slides/Video</h2> </div>
+            </div>
+
+            <div class="table_row">
+                <div class="Cell">1</div>
+                <div class="Cell">Intro, Worst Case Complexity</div>
+                <div class="Cell">None</div>
+                <div class="Cell">
+                    CLRS 3.1 (not including little "oh") or watch
+                    <a href="https://www.youtube.com/watch?v=__vX2sjlpXU" target="_blank">Big-O Video</a>
+                    <a href="https://www.youtube.com/watch?v=JU767SDMDvA" target="_blank">Insertion Sort Video</a>
+                </div>
+                <div class="Cell">
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankPDF.pdf') }}" target="_blank">Intro Slides PDF</a>
+                </div>
+                <div class="Cell">
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankPDF.pdf') }}" target="_blank">Worksheet PDF</a>
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankPDF.pdf') }}" target="_blank">Worksheet1_class</a>
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankSLIDES.pdf') }}" target="_blank">Slides PDF</a>
+                    <a href="https://utoronto.zoom.us/rec/play/w5Ims_xwzyJUVhutTMqNBT0caqXCWYyMWx5X-FJvA1dFPpCrjdO8V5osw6hsxEM74HVTmX9jZ2jdwCLj.qvnXbtIQPChGF0bo" target="_blank">Zoom Recording</a>
+                </div>
+            </div>
+            
+            <div class="table_row">
+                <div class="Cell">2</div>
+                <div class="Cell">Balanced Trees (AVL)</div>
+                <div class="Cell">None</div>
+                <div class="Cell">
+                    Refresh your understanding of Binary Search Trees
+                    <a href="https://www.youtube.com/watch?v=mtvbVLK5xDQ">Video</a>
+                    <a href="https://www.cs.usfca.edu/~galles/visualization/BST.html">Visualization Applet</a>
+                </div>
+                <div class="Cell">
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankPDF.pdf') }}" target="_blank">Worksheet PDF</a>
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankPDF.pdf') }}" target="_blank">In-class Worksheet</a>
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankSLIDES.pdf') }}" target="_blank">Slides</a>
+                    <a href="https://utoronto.zoom.us/rec/play/cPkKVMthfBjSNh8C9arS5iU0ZBNtkUX8etKMklUCM8aPpiVtnl2_Y5YR_cWddFB2vlWa0jkGSEqWNEhk.hNVzvFkr8380FGns" target="_blank">Zoom Recording</a>
+                </div>
+                <div class="Cell">
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankPDF.pdf') }}" target="_blank">Worksheet</a>
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankPDF.pdf') }}" target="_blank">In-class Worksheet</a>
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankSLIDES.pdf') }}" target="_blank">Slides</a>
+                    <a href="https://utoronto.zoom.us/rec/play/YJYxBNbdKY8lIY98qjI_jHY5ZC73gSUeFCtAKmy6xJF6GEtw_VWFTFGr_guqhthaDEoRhYogPHBbR3fa.c5lUGL0uWjqS5aUX" target="_blank">Zoom Recording</a>
+                </div>
+            </div>
+
+            <div class="table_row">
+                <div class="Cell">3</div>
+                <div class="Cell">AVL Trees height, and Augment. Interval Trees</div>
+                <div class="Cell">None</div>
+                <div class="Cell">None</div>
+                <div class="Cell">
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankPDF.pdf') }}" target="_blank">AVL Trees</a>
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankPDF.pdf') }}" target="_blank">Augmenting Worksheet</a>
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankPDF.pdf') }}" target="_blank">In-class Worksheet</a>
+                    <a href="https://utoronto.zoom.us/rec/play/xe3-BWhQIa99HuA6ar-kqNg028IUwxpfPnCN0r4sFtxP0_-MDbeK6coEm-bLm7b8GzO6FTwMXr9uqcMf.IvWbqDbkC9o5p3R1" target="_blank">Zoom Recording</a>
+                </div>
+                <div class="Cell">
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankPDF.pdf') }}" target="_blank">Interval Tree Solutions</a>
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankPDF.pdf') }}" target="_blank">Interval Tree In-class</a>
+                    <a href="https://utoronto.zoom.us/rec/play/zpBKZxDPmhHRldejrZ0fnXt1Cvrp0ofjSzjzXwQiDCrBze29y1GDemjGLp8uMLg0txf5m4_Sl_j8Zg0g.17AKCDIZldEHg825" target="_blank">Zoom Recording</a>
+                </div>
+            </div>
+
+            <div class="table_row">
+                <div class="Cell">4</div>
+                <div class="Cell">Finish Interval Trees, Heaps and Graph Search Algorithms</div>
+                <div class="Cell">BLANK SPACE</div>
+                <div class="Cell">Chapter 6.1-6.4</div>
+                <div class="Cell">
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankPDF.pdf') }}" target="_blank">Interval Tree</a>
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankPDF.pdf') }}" target="_blank">Search Proof</a>
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankPDF.pdf') }}" target="_blank">Heaps</a>
+                    <a href="https://utoronto.zoom.us/rec/play/zpBKZxDPmhHRldejrZ0fnXt1Cvrp0ofjSzjzXwQiDCrBze29y1GDemjGLp8uMLg0txf5m4_Sl_j8Zg0g.17AKCDIZldEHg825" target="_blank">Zoom Recording</a>
+                </div>
+                <div class="Cell">
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankPDF.pdf') }}" target="_blank">Heaps In-class</a>
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankPDF.pdf') }}" target="_blank">Heaps Building Example</a>
+                    <a href="https://utoronto.zoom.us/rec/play/s8HE2dtGwcl7OWtfMMlQ9I_ivR3mmbieSP3lPhYygBqdIj7Do-uExVtGY5Ln-f0Pj9whkVdMS5w8hIU4.Glja1FlY-UeG3zYv" target="_blank">Zoom Recording</a>
+                </div>
+            </div>
+            
+            <div class="table_row">
+                <div class="Cell">5</div>
+                <div class="Cell">Graph Searches and Minimum Spanning Trees</div>
+                <div class="Cell">Term Test Wed</div>
+                <div class="Cell">If you have not had your tutorial, read the graph handout on the tutorials page.</div>
+                <div class="Cell">None</div>
+                <div class="Cell">
+
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankSLIDES.pdf') }}" target="_blank">Graph Search Slides</a>
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankPDF.pdf') }}" target="_blank">Searches Worksheet</a>
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankSLIDES.pdf') }}" target="_blank">MST Slides</a>
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankPDF.pdf') }}" target="_blank">MST Worksheet</a>
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankPDF.pdf') }}" target="_blank">MST Worksheet Solutions Updated</a>
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankSLIDES.pdf') }}" target="_blank">In-class Graph Notes</a>
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankPDF.pdf') }}" target="_blank">MST In-class</a>
+
+                    Only to slide 15
+                    <a href="https://utoronto.zoom.us/rec/play/Ms9uZypiMbcYSes1jevEOJZf8cqMq_PBybH85r2rEdaARuXQOQcWF3dYgiaidZqGQTuaqchmJ1-hax4D.JS_0iOHyLPMjt66M" target="_blank">Zoom Recording</a>
+                </div>
+            </div>
+
+            <div class="table_row">
+                <div class="Cell">6</div>
+                <div class="Cell">Proof of Prims, Dijkstra's Algorithm, Strongly Connected Components</div>
+                <div class="Cell">Ch 24.3, Practice Prims algorithm</div>
+                <div class="Cell">22.5, Review DFS - make sure you understand it</div>
+                <div class="Cell">
+
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankSLIDES.pdf') }}" target="_blank">MST In-class</a>
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankSLIDES.pdf') }}" target="_blank">Dijkstra</a>
+                    <a href="https://utoronto.zoom.us/rec/play/s8HE2dtGwcl7OWtfMMlQ9I_ivR3mmbieSP3lPhYygBqdIj7Do-uExVtGY5Ln-f0Pj9whkVdMS5w8hIU4.Glja1FlY-UeG3zYv" target="_blank">Zoom Recording</a>
+                </div>
+                <div class="Cell">
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankSLIDES.pdf') }}" target="_blank">Strongly Connected Components Slides</a>
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankSLIDES.pdf') }}" target="_blank">SCC Examples</a>
+
+                    <a href="https://utoronto.zoom.us/rec/play/s8HE2dtGwcl7OWtfMMlQ9I_ivR3mmbieSP3lPhYygBqdIj7Do-uExVtGY5Ln-f0Pj9whkVdMS5w8hIU4.Glja1FlY-UeG3zYv" target="_blank">Zoom Recording</a>
+                </div>
+            </div>
+             
+            <div class="table_row">
+                <div class="Cell">7</div>
+                <div class="Cell">Amortized Analysis</div>
+                <div class="Cell">Ch. 17.4, Ch. 21</div>
+                <div class="Cell">BLANK SPACE</div>
+                <div class="Cell">
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankSLIDES.pdf') }}" target="_blank">Amortized Lecture Slides</a>
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankSLIDES.pdf') }}" target="_blank">Amortized Lecture In-class Slides</a>
+                    <a href="https://utoronto.zoom.us/rec/play/Ms9uZypiMbcYSes1jevEOJZf8cqMq_PBybH85r2rEdaARuXQOQcWF3dYgiaidZqGQTuaqchmJ1-hax4D.JS_0iOHyLPMjt66M" target="_blank">Zoom Recording</a>
+                </div>
+                <div class="Cell">
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankSLIDES.pdf') }}" target="_blank">Potential Lecture Slides</a>
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankSLIDES.pdf') }}" target="_blank">Potential Lecture In-class</a>
+                    <a href="https://utoronto.zoom.us/rec/play/s8HE2dtGwcl7OWtfMMlQ9I_ivR3mmbieSP3lPhYygBqdIj7Do-uExVtGY5Ln-f0Pj9whkVdMS5w8hIU4.Glja1FlY-UeG3zYv" target="_blank">Zoom Recording</a>
+                </div>
+            </div>
+            
+            <div class="table_row">
+                <div class="Cell">8</div>
+                <div class="Cell">Disjoint Sets, Fibonacci Heaps</div>
+                <div class="Cell">Ch. 20</div>
+                <div class="Cell">BLANK SPACE</div>
+                <div class="Cell">
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankSLIDES.pdf') }}" target="_blank">Disjoint Sets</a>
+                    <a href="https://utoronto.zoom.us/rec/play/BM5ICZEeNZV0HlYeDiza1zvzCOPstKNpe6uxOw2pmw5Uq20Upz23r89scLKdSj6fgk033vB2RMclIV85.1ydcqiZ09BXwkTNh" target="_blank">Zoom Recording</a>
+                </div>
+                <div class="Cell">
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankSLIDES.pdf') }}" target="_blank">Fibonacci Heaps Annotated</a>
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankSLIDES.pdf') }}" target="_blank">Fibonacci Heaps Complexity Annotated</a>
+                    <a href="https://utoronto.zoom.us/rec/play/s8HE2dtGwcl7OWtfMMlQ9I_ivR3mmbieSP3lPhYygBqdIj7Do-uExVtGY5Ln-f0Pj9whkVdMS5w8hIU4.Glja1FlY-UeG3zYv" target="_blank">Zoom Recording</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------------------TUTORIALS PAGE------------------------------------------------->
+    <div class="page_blue" id="tutorials">
+        <div class="title">Tutorials</div>
+        <!--Table_container CONTAINS THE ENTIRE TABLE-->
+        <!--Table_row CONTAINS APPROPRIATE ITEMS IN EACH ROW-->
+        <!--Cell IS AN ITEM IN EACH ROW-->
+        <div class="Table_container">
+            <div class="table_row">
+                <div class="Cell"> <h2>Week</h2> </div>
+                <div class="Cell"> <h2>Topic</h2> </div>
+                <div class="Cell"> <h2>Handout</h2> </div>
+                <div class="Cell"> <h2>Solutions</h2> </div>
+            </div>
+
+            <div class="table_row">
+                <div class="Cell">1</div>
+                <div class="Cell">No Tutorial</div>
+                <div class="Cell">BLANK SPACE</div>
+                <div class="Cell">BLANK SPACE</div>
+            </div>
+            
+            <div class="table_row">
+                <div class="Cell">2</div>
+                <div class="Cell">Worst Case Complexity</div>
+                <div class="Cell">
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankSLIDES.pdf') }}" target="_blank">Handout</a>
+                </div>
+                <div class="Cell">
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankSLIDES.pdf') }}" target="_blank">Solution</a>
+                </div>
+            </div>
+
+            <div class="table_row">
+                <div class="Cell">3</div>
+                <div class="Cell">AVL Trees Insert/Delete</div>
+                <div class="Cell">
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankSLIDES.pdf') }}" target="_blank">Handout</a>
+                </div>
+                <div class="Cell">
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankSLIDES.pdf') }}" target="_blank">Solution</a>
+                </div>
+            </div>
+
+            <div class="table_row">
+                <div class="Cell">4</div>
+                <div class="Cell">Practice Term test format</div>
+                <div class="Cell">BLANK SPACE</div>
+                <div class="Cell">BLANK SPACE</div>
+            </div>
+
+            <div class="table_row">
+                <div class="Cell">5</div>
+                <div class="Cell">Graph Search Algorithms</div>
+                <div class="Cell">
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankSLIDES.pdf') }}" target="_blank">Graph Definitions</a><br>
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankSLIDES.pdf') }}" target="_blank">BFS Handout</a><br>
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankSLIDES.pdf') }}" target="_blank">BFS Practice</a>
+                </div>
+                <div class="Cell">BLANK SPACE</div>
+            </div>
+
+            <div class="table_row">
+                <div class="Cell">6</div>
+                <div class="Cell">MSTs and Prims Algorithm</div>
+                <div class="Cell">
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankSLIDES.pdf') }}" target="_blank">Handout</a>
+                </div>
+                <div class="Cell">BLANK SPACE</div>
+            </div>
+
+            <div class="table_row">
+                <div class="Cell">7</div>
+                <div class="Cell">Dijkstra</div>
+                <div class="Cell">
+                    <a href="{{ url_for('static',filename='Blank Documents/BlankSLIDES.pdf') }}" target="_blank">Handout</a>
+                </div>
+                <div class="Cell">BLANK SPACE</div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------------------ASSIGNMENTS PAGE------------------------------------------------->
+    <div class="page_white" id="assignments">
+        <div class="title">Assignments</div>
+        <p>To be submitted to gradescope</p>
+        <!--Container CONTAINS ALL THE BOXES-->
+        <!--column CONTAINS BOXES TO BE ARRANGED VERTICALLY-->
+        <!--Box CONTAINS TEXT CONTENT.-->
+        <div class="Container">
+            <div class="column">
+                <div class="Box">
+                    <h2>A1</h2>
+                    <a href="https://mathlab.utsc.utoronto.ca/bretscher/b63/assignments/a1.pdf" target="_blank">a1.pdf</a>, <a href="https://mathlab.utsc.utoronto.ca/bretscher/b63/assignments/a1.tex" target="_blank">a1.tex</a> Small update Jan. 27 (noted in red)
+                </div>
+                <div class="Box">
+                    <h2>A2</h2>
+                    <a href="https://mathlab.utsc.utoronto.ca/bretscher/b63/assignments/a2.pdf" target="_blank">a2.pdf</a>, <a href="https://mathlab.utsc.utoronto.ca/bretscher/b63/assignments/a2.tex" target="_blank">a2.tex</a> Note new due date.
+                </div>
+                <div class="Box">
+                    <h2>A3</h2>
+                    <a href="https://mathlab.utsc.utoronto.ca/bretscher/b63/assignments/a3.pdf" target="_blank">a3.pdf</a>, <a href="https://mathlab.utsc.utoronto.ca/bretscher/b63/assignments/a3.tex" target="_blank">a3.tex</a>Note new due date (Sunday March 23 at noon).
+                </div>
+                <div class="Box">
+                    <h2>LaTeX</h2>
+                    For LaTeX installations, go to the latex project install website. Both the Windows and Mac versions listed come with editors as well as the packages and compilers.
+
+Once you are up and running, I recommend downloading the Not So Short Guide to LaTeX. Everything you need is there, however it may be overkill. You can also start with this template.tex and add as you need.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------------------------------Grade MINI PAGE--------------------------------------------------->
+    <div class="page_blue" id="grades">
+        <div class="title">Grades</div><br><br>
+        <!--DUMMY FORM-->
+        <div class="grade_table">
+            <div>Name</div>
+            <div>Username</div>
+            <div>A1</div>
+            <div>A2</div>
+            <div>A3</div>
+            <div>A4</div>
+            <div>TT1</div>
+            <div>TT2</div>
+            <div>TT3</div>
+            <div>TT4</div>
+            <div>Final</div>
+            <!-- loop across all students-->
+            {% for item in student %}
+            <div>{{ item['Name'] }}</div>
+            <div>{{ item['Username'] }}</div>
+            <div>{{ item['A1'] }}</div>
+            <div>{{ item['A2'] }}</div>
+            <div>{{ item['A3'] }}</div>
+            <div>{{ item['A4'] }}</div>
+            <div>{{ item['TT1'] }}</div>
+            <div>{{ item['TT2'] }}</div>           
+            <div>{{ item['TT3'] }}</div>
+            <div>{{ item['TT4'] }}</div>
+            <div>{{ item['Final'] }}</div>
+            {% endfor %}
+        </div>
+    </div>
+
+ 
+
+    <!--------------------------------------------------REGRADE MINI PAGE--------------------------------------------------->
+    <div class="page_white" id="regrade">
+        <div class="title">Regrade Request</div><br><br>
+        <form action="/regraded" method="POST">
+            <input class="input-box" type="text" name="student" placeholder="Username">
+            <select name="assessment">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="TT1">TT1</option>
+                <option value="TT2">TT2</option>
+                <option value="TT3">TT3</option>
+                <option value="TT4">TT4</option>
+                <option value="Final">Final</option>
+            </select>
+            <input class="input-box" type="INTEGER" name="new-grade" placeholder="Regrade">
+            <input type="submit" name="regrade-submit">
+        </form>
+        {% for item in regrades%}
+        <p>
+            {{ item['Username'] }} {{ item['Assessment'] }} {{ item['Reason'] }}
+        </p>
+        <br><br>
+        {% endfor %}
+        <br>
+
+    </div>
+
+    <!--------------------------------------------------FEEDBACK MINI PAGE--------------------------------------------------->
+    <div class="page_blue" id="feedback">
+        <div class="title">Feedback (Anonymous)</div><br><br>
+        <!--DUMMY FORM-->
+        <div class="Container">
+            <div class="column">
+                {% for item in feedbacks%}
+                <div class="Box">
+                    {{ item['Text'] }}
+                </div>
+                <br><br>
+                {% endfor %}
+            </div>
+        </div>        
+    </div>
+
+    <!--------------------------------------------------FOOTER--------------------------------------------------->
+    <div class="footer">
+        <a href="https://web.cs.toronto.edu/" target="_blank">Department of Computer Science at the University of Toronto</a>
+        <br>
+        Website designed by Hunter Chen, Amey Damle and Yilin Zhao
+    </div>   
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <!--<link rel="stylesheet" href="../static/login.css">-->
+        <link rel="stylesheet" href="{{url_for('static', filename='login.css')}}">
+    </head>
+    <body>
+        <div id="Login_Box">
+            <img src="../static/UofT_Logo.PNG" alt="UofT_Logo">
+            <form id="form_login" method="post">
+                <input class="stringInput" type=text name=username placeholder="Username">
+                <input class="stringInput" type=password name=password placeholder="Password">
+
+                {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                        {% for message in messages %}
+                            <div class="alert-warning" role="alert">
+                                {{message}}
+                            </div><br>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+                <a href="/register" id="create_account">Create Account</a><br><br>
+                <input class="submitButton" name="login" type="submit" value="Login">
+            <form>
+        </div>
+    </body>
+</html>
