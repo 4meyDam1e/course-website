@@ -19,7 +19,6 @@ def get_db():
     return db
 
 # given a query, executes and returns the result
-# (don't worry if you don't understand this code)
 def query_db(query, args=(), one=False): #function taken from lecture code, hope that's ok
     cur = get_db().execute(query, args)
     rv = cur.fetchall()
